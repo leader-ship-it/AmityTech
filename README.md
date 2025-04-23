@@ -1,0 +1,2 @@
+# AmityTech
+wellington hackathon
