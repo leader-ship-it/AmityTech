@@ -73,13 +73,11 @@ class delivery(gym.Env):
         )).astype(np.float32)
 
     def reset(self, seed=None, options=None):
-            global delivery_orders, d_t, reached, discount, visited
+            
             super().reset(seed=seed)
 
-            # Reset globals
-            reached = 0
-            discount = 0
-            visited = []
+      
+    
 
             # Environment state reset
             self.steps = 0
@@ -106,7 +104,7 @@ class delivery(gym.Env):
             return - (travel_time / 113.5) * 2.0  # Max penalty = -2.0
 
     def step(self, action):
-        global reached, discount, visited
+        
         terminated = False
         truncated = False
         self.steps += 1 # increase steps
