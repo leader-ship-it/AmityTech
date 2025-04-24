@@ -6,7 +6,7 @@ import time
 
                              
 # Load delivery locations data
-delivery_locations = pd.read_csv("./data/delivery_locations.csv")
+delivery_locations = pd.read_csv("delivery_locations.csv")
 delivery_orders=pd.read_csv("locations.csv")
 
 # Streamlit UI
