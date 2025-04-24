@@ -1,5 +1,6 @@
 # AmityTech
 wellington hackathon
-This project implements a custom delivery environment for optimizing delivery routes using Proximal Policy Optimization (PPO) from the Stable-Baselines3 library. The environment is built using Gymnasium, and the agent learns to minimize delivery time and prioritize high-priority orders efficiently.
-
-
+Problem statement
+Our problem requires us to identify optimized routes based on generated datasets i.e given a set of orders we are required to find the most optimal way to complete these orders
+Our solution
+Our solution involves using reinforcement learning to train an agent to take the best decision from any location.
