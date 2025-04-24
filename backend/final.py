@@ -8,11 +8,6 @@ import prob1  # used to generate random data
 delivery_orders = pd.read_csv("./data/delivery_orders.csv")
 d_t = pd.read_csv("./data/distance_traffic_matrix.csv")
 
-# Global variables
-reached = 0          # Tracks if all orders were completed and returned to depot
-discount = 1         # Time step discount to simulate delay penalty
-visited = []         # Tracks visited locations to discourage revisits
-
 
 # Calculates travel time from a given location to all others
 def calculate_time(src, x):
