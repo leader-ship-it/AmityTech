@@ -2,12 +2,15 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
+cwd = os.path.dirname(os.path.abspath(__file__))
 
-                             
 # Load delivery locations data
-delivery_locations = pd.read_csv("delivery_locations.csv")
-delivery_orders=pd.read_csv("locations.csv")
+file_path = os.path.join(cwd, "delivery_locations.csv")
+delivery_locations=pd.read_csv(file_path)
+file_path = os.path.join(cwd, "locations.csv")
+delivery_orders=pd.read_csv(file_path)
 
 # Streamlit UI
 st.title("Agent's Journey Visualization")
